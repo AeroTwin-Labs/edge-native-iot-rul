@@ -1,0 +1,6 @@
+{
+  "name": "Aviation Fleet Predictive Maintenance Dashboard",
+  "description": "An AI-powered full-stack industrial IoT predictive maintenance system for aircraft components, utilizing LightGBM model simulations and Google Gemini diagnostics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
