@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project develops a Machine Learning-based predictive maintenance system to estimate the Remaining Useful Life (RUL)** of aircraft engine components. Predicting RUL helps identify potential failures before they occur, enabling timely maintenance, reducing operational costs, minimizing downtime, and improving aircraft reliability.
+This project develops a Machine Learning-based predictive maintenance system to estimate the Remaining Useful Life (RUL) of aircraft engine components. Predicting RUL helps identify potential failures before they occur, enabling timely maintenance, reducing operational costs, minimizing downtime, and improving aircraft reliability.
 
 The project uses the **`flight_components_condition_augmented_10000`** dataset from Kaggle. The dataset was further enhanced through feature engineering and preprocessing to improve prediction performance. Five machine learning algorithms were trained and evaluated, and the best-performing model was selected based on prediction accuracy.
 
@@ -64,18 +64,23 @@ Used to evaluate the prediction performance of a margin-based machine learning m
 
 ### Random Forest
 
-Used to improve prediction accuracy by combining multiple decision trees and reducing overfitting. It achieved an accuracy of **98.05%**.
+Random Forest was selected as the final prediction model for this project.
+
+It improves prediction accuracy by combining multiple decision trees and reducing overfitting. It achieved an accuracy of **98.05%**.
+
+Random Forest was selected as the final model because it:
+
+* Provides high prediction accuracy.
+* Reduces overfitting compared to a single decision tree.
+* Handles complex relationships between aircraft engine features effectively.
+* Provides stable and reliable Remaining Useful Life (RUL) predictions.
+* Works efficiently with structured aircraft maintenance datasets.
 
 ### XGBoost
 
-XGBoost achieved the highest accuracy of **98.20%** among all evaluated models.
+XGBoost was also evaluated as one of the machine learning algorithms.
 
-It was selected as the final prediction model because it:
-
-* Achieved the highest prediction accuracy.
-* Handled complex feature relationships effectively.
-* Reduced overfitting through regularization.
-* Produced reliable Remaining Useful Life (RUL) predictions.
+It achieved an accuracy of **98.20%** among all evaluated models. However, Random Forest was selected as the final prediction model because of its reliability, interpretability, and effective performance on aircraft engine component data.
 
 ---
 
@@ -112,45 +117,3 @@ Aircraft-Engine-Predictive-Maintenance/
 │   └── XGBoost.ipynb
 │
 └── README.md
-```
-
----
-
-## Workflow
-
-1. Collect the aircraft engine dataset.
-2. Clean and preprocess the data.
-3. Perform feature engineering.
-4. Train five machine learning algorithms.
-5. Compare the prediction accuracy of all models.
-6. Select the best-performing model.
-7. Predict the Remaining Useful Life (RUL) of aircraft engine components.
-
----
-
-## Results
-
-The performance comparison showed that **XGBoost** achieved the highest prediction accuracy of **98.20%**, followed by **Random Forest** with **98.05%**.
-
-Based on the evaluation results, **XGBoost** was selected as the final model for predicting the Remaining Useful Life (RUL) of aircraft engine components.
-
----
-
-## Team Members
-
-**Project Lead**
-
-* Keerthi S
-
-**Team Members**
-
-* Kartheeswaran
-* Karthikesan
-* Manikandan
-* Lakshanasri
-
----
-
-## License
-
-This project is developed for academic and research purposes only.
